@@ -1,0 +1,45 @@
+.matrix-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.matrix-item-row {
+    display: flex;
+}
+
+.matrix-item-col {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.matrix-item-col:hover {
+    background-color: lightgray;
+    
+}
+
+#i-0 #j-0{
+    border-top-left-radius: 10%;
+}
+
+#i-0 #j-2{
+    border-top-right-radius: 10%;
+}
+
+#i-2 #j-0{
+    border-bottom-left-radius: 10%;
+}
+
+#i-2 #j-2{
+    border-bottom-right-radius: 10%;
+}
