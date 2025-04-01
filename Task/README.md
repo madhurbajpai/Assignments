@@ -1,12 +1,31 @@
-# React + Vite
+# Task Management Application
+This is a web-based Task Management Application built using React, designed to help users manage their tasks effectively by categorizing them into priority based. The app also includes api weather fetch call when "outdoor" word is encountered in the task title    .
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Components
+1. Login/Logout
+Only authorize users can create task. This information is stored using the Redux.
 
-Currently, two official plugins are available:
+2. Select Priority
+Displays a list of priorities that includes low, medium and high
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Add/Delete Task
+Provides option with adding and deleteing task. Adds weather condition by fetching api if input includes "outdoor".
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Available Scripts
+
+In the `project directory`, you can run:
+1. First Clone the repository:
+### `https://github.com/madhurbajpai/Assignments/tree/main/Task`
+2. Next you should change the directory
+### `cd task`
+3. Next, you should install all the dependencies
+### `npm i`
+4. After that following command in the ### `project directory`
+### `npm run dev`
+
+Runs the app in the development mode.\
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+Here is the Demo link of the deployed website
+[https://assignments-task.vercel.app/](https://assignments-task.vercel.app/)

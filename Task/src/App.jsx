@@ -26,6 +26,7 @@ function App() {
       ) : (
         <Login />
       )}
+      <h6>Another version of this app <a target="_blank" href="https://manage-tasks-a2z.vercel.app/" > Click Here</a></h6>
     </div>
   );
 }
