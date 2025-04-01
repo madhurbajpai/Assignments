@@ -18,7 +18,7 @@ In the `project directory`, you can run:
 1. First Clone the repository:
 ### `https://github.com/madhurbajpai/Assignments/tree/main/Task`
 2. Next you should change the directory
-### `cd task`
+### `cd Task`
 3. Next, you should install all the dependencies
 ### `npm i`
 4. After that following command in the ### `project directory`
