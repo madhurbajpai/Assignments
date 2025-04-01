@@ -1,19 +1,32 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { store } from './redux/store';
-import TaskInput from './Components/TaskInput';
-import TaskList from './Components/TaskList';
-import './App.css';
+import React from "react";
+import { useSelector } from "react-redux";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+import TaskInput from "./Components/TaskInput";
+import TaskList from "./Components/TaskList";
+import Login from "./Components/Login";
+import Logout from "./Components/Logout";
+import "./App.css";
 
 function App() {
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+
   return (
-    <Provider store={store}>
-      <div className="App">
+    <div className="App">
+      <div className="header">
         <h1>Advanced To-Do Application</h1>
-        <TaskInput />
-        <TaskList />
+        {isAuthenticated ? <Logout /> : ''}
       </div>
-    </Provider>
+      {isAuthenticated ? (
+        <>
+          {/* <Logout /> */}
+          <TaskInput />
+          <TaskList />
+        </>
+      ) : (
+        <Login />
+      )}
+    </div>
   );
 }
 

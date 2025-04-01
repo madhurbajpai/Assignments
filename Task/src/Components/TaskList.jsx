@@ -7,10 +7,11 @@ const TaskList = () => {
   const dispatch = useDispatch();
 
   return (
-    <ul>
+    <ul style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'end'}}>
       {tasks.map((task) => (
         <li key={task.id}>
-          {task.text} - {task.priority}
+          {task.text} - {task.priority} 
+          {task.weather && ` (Weather: ${task.weather})`}
           <button onClick={() => dispatch(deleteTask(task.id))}>Delete</button>
         </li>
       ))}
