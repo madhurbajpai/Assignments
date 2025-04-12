@@ -1,0 +1,14 @@
+.popup {
+  position: fixed;
+  border-radius: 4px;
+  margin-top: 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 24%;
+  height: 10%;
+  color: aliceblue;
+  background-color: rgba(23, 37, 225, 0.5);
+  display: flex;font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+}
